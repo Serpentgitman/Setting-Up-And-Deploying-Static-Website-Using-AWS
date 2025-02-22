@@ -358,7 +358,7 @@ Your website should be accessible securely through your domain name, with proper
    - Monitor certificate expiration
    - Update content via S3
    - Check CloudFront metrics
-   - Check cost explorer to see how musch you are spending based on utilized AWS resources
+   - Check cost explorer to see how much you are spending based on utilized AWS resources
    - Review security settings
    - Keep track of domain registration renewal
    ```
@@ -378,7 +378,7 @@ Your website should be accessible securely through your domain name, with proper
    ```
    - DNS not resolving: Check nameservers
    - HTTPS not working: Verify certificates issued
-   - Content not updating: Check CloudFront cache, create invalidation for index by /index.html can also do */ for all files in s3 bucket
+   - Content not updating: Check CloudFront cache, create invalidation for index by /index.html can also do /* for all files in s3 bucket
    - Incorrect Hosted Zone Name Servers
    - CNAME Certificate pending, make sure when creating a record for it in route 53 that it all values are the same. Alternatively create record in route 53 directly through acm where you create the certificate. Can delete and create new one if it times out from pending too long and try it this way
    ```
